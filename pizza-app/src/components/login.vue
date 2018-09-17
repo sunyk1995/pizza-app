@@ -32,6 +32,7 @@
 					})
 					if(code&&code.length>0){
 						alert('恭喜你，登录成功')
+						this.$store.commit('setname',code[0])
 					}
 					else{
 						alert('账号或者密码错误')
